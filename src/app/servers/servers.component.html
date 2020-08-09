@@ -1,0 +1,10 @@
+<p>
+  servers works!
+</p>
+<button class="btn btn-primary" (click)="togggleParagraph()"> Display Details </button>
+<p *ngIf="showParagraph">{{paragraph}}</p>
+  <div *ngFor="let logMessage of btnClicksLogs; let i=index"
+     [ngStyle]="{'background-color': i>=5?'blue':'transparant'}" [ngClass]="{'colorClass':i>=5}">
+      {{logMessage}}
+    
+  </div>
